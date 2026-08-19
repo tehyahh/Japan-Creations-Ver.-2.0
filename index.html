@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Creations</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+   
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">JAPANESE CREATIONS</div>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Main</a>
+            <a href="movies.html">Movies</a>
+            <a href="series.html">Series</a>
+            <a href="authors.html">Authors</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="user-profile"></div>
+    </header>
+
+    <section class="hero" id="heroSection">
+        <video loop muted playsinline class="hero-video-bg">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badges">
+                <span class="badge red">Featured</span>
+                <span class="badge dark">1988 / 1h45m</span>
+            </div>
+            <h1>My Neighbor Totoro</h1>
+            <p class="hero-tags">Director: Hayao Miyazaki | Studio: Ghibli</p>
+            <p class="hero-description">
+                Two young girls, Mei and Satsuki, move into a house in the countryside with their father and interact with friendly wood spirits in post-war rural Japan.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn red" id="watchNowBtn">Watch Now</button>
+                <button class="btn dark">Details</button>
+            </div>
+        </div>
+        <div class="hero-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <section class="content-section trending-carousel-section">
+<h2 class="section-title">   Trending Now <a href="trends.html" class="view-all">View All</a></h2>
+        
+        <div class="t-carousel-container">
+            <button class="t-arrow t-prev" onclick="moveCarousel(-1)">&#10094;</button>
+
+            <div class="t-carousel-track" id="trendCarouselTrack">
+                <div class="t-card active" data-index="0">
+                    <div class="t-card-img"><img src="movpic/Mary.jpg" alt="Mary"></div>
+                    <div class="t-card-info"><h3>Mary and the Witch's Flower</h3><p>Fantasy</p></div>
+                </div>
+                <div class="t-card" data-index="1">
+                    <div class="t-card-img"><img src="movpic/Mononoke.jpg" alt="Mononoke"></div>
+                    <div class="t-card-info"><h3>Princess Mononoke</h3><p>Epic Fantasy</p></div>
+                </div>
+                <div class="t-card" data-index="2">
+                    <div class="t-card-img"><img src="movpic/MovingCastle.jpg" alt="MovingCastle"></div>
+                    <div class="t-card-info"><h3>Howl's Moving Castle</h3><p>Romance</p></div>
+                </div>
+                <div class="t-card" data-index="3">
+                    <div class="t-card-img"><img src="movpic/Ponyo.jpg" alt="Ponyo"></div>
+                    <div class="t-card-info"><h3>Ponyo</h3><p>Adventure</p></div>
+                </div>
+                <div class="t-card" data-index="4">
+                    <div class="t-card-img"><img src="movpic/Slime.jpg" alt="Slime"></div>
+                    <div class="t-card-info"><h3>That Time I Got Reincarnated as a Slime</h3><p>Isekai</p></div>
+                </div>
+                <div class="t-card" data-index="5">
+                    <div class="t-card-img"><img src="movpic/Totoro.jpg" alt="Totoro"></div>
+                    <div class="t-card-info"><h3>My Neighbor Totoro</h3><p>Family</p></div>
+                </div>
+                <div class="t-card" data-index="6">
+                    <div class="t-card-img"><img src="movpic/Violet.jpg" alt="Violet"></div>
+                    <div class="t-card-info"><h3>Violet Evergarden</h3><p>Drama</p></div>
+                </div>
+            </div>
+
+            <button class="t-arrow t-next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+
+        <div class="t-dots" id="trendDots">
+            <span class="t-dot active" onclick="currentSlide(0)"></span>
+            <span class="t-dot" onclick="currentSlide(1)"></span>
+            <span class="t-dot" onclick="currentSlide(2)"></span>
+            <span class="t-dot" onclick="currentSlide(3)"></span>
+            <span class="t-dot" onclick="currentSlide(4)"></span>
+            <span class="t-dot" onclick="currentSlide(5)"></span>
+            <span class="t-dot" onclick="currentSlide(6)"></span>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2 class="section-title">Recent Additions <a href="recent.html" class="view-all">View All</a></h2>
+        <div class="scroller-container">
+            <button class="scroll-btn left-btn" onclick="manualScroll('recentScroller', -300)">&#10094;</button>
+            <div class="media-scroller scroller-3d scroll-left" id="recentScroller">
+                <a href="recent1.html" class="media-card"><div class="card-thumb"><img src="movpic/Totoro.jpg" alt="Totoro"></div><p class="card-title">My Neighbor Totoro</p></a>
+                <a href="recent2.html" class="media-card"><div class="card-thumb"><img src="movpic/Violet.jpg" alt="Violet"></div><p class="card-title">Violet Evergarden</p></a>
+                <a href="recent3.html" class="media-card"><div class="card-thumb"><img src="movpic/Yourname.jpg" alt="Your Name"></div><p class="card-title">Your Name</p></a>
+                <a href="recent4.html" class="media-card"><div class="card-thumb"><img src="movpic/ColorfulStage.jpg" alt="Colorful Stage"></div><p class="card-title">Colorful Stage</p></a>
+                <a href="recent5.html" class="media-card"><div class="card-thumb"><img src="movpic/KIKI.jpg" alt="Kiki"></div><p class="card-title">Kiki's Delivery Service</p></a>
+                <a href="recent6.html" class="media-card"><div class="card-thumb"><img src="movpic/Mary.jpg" alt="Mary"></div><p class="card-title">Mary and the Witch's Flower</p></a>
+                <a href="recent7.html" class="media-card"><div class="card-thumb"><img src="movpic/Mononoke.jpg" alt="Mononoke"></div><p class="card-title">Princess Mononoke</p></a>
+                <a href="recent8.html" class="media-card"><div class="card-thumb"><img src="movpic/MovingCastle.jpg" alt="MovingCastle"></div><p class="card-title">Howl's Moving Castle</p></a>
+                <a href="recent9.html" class="media-card"><div class="card-thumb"><img src="movpic/Ponyo.jpg" alt="Ponyo"></div><p class="card-title">Ponyo</p></a>
+                <a href="recent10.html" class="media-card"><div class="card-thumb"><img src="movpic/Slime.jpg" alt="Slime"></div><p class="card-title">That Time I Got Reincarnated as a Slime</p></a>
+                <a href="recent1.html" class="media-card"><div class="card-thumb"><img src="movpic/Totoro.jpg" alt="Totoro"></div><p class="card-title">My Neighbor Totoro</p></a>
+                <a href="recent2.html" class="media-card"><div class="card-thumb"><img src="movpic/Violet.jpg" alt="Violet"></div><p class="card-title">Violet Evergarden</p></a>
+                <a href="recent3.html" class="media-card"><div class="card-thumb"><img src="movpic/Yourname.jpg" alt="Your Name"></div><p class="card-title">Your Name</p></a>
+                <a href="recent4.html" class="media-card"><div class="card-thumb"><img src="movpic/ColorfulStage.jpg" alt="Colorful Stage"></div><p class="card-title">Colorful Stage</p></a>
+                <a href="recent5.html" class="media-card"><div class="card-thumb"><img src="movpic/KIKI.jpg" alt="Kiki"></div><p class="card-title">Kiki's Delivery Service</p></a>
+                <a href="recent6.html" class="media-card"><div class="card-thumb"><img src="movpic/Mary.jpg" alt="Mary"></div><p class="card-title">Mary and the Witch's Flower</p></a>
+                <a href="recent7.html" class="media-card"><div class="card-thumb"><img src="movpic/Mononoke.jpg" alt="Mononoke"></div><p class="card-title">Princess Mononoke</p></a>
+                <a href="recent8.html" class="media-card"><div class="card-thumb"><img src="movpic/MovingCastle.jpg" alt="MovingCastle"></div><p class="card-title">Howl's Moving Castle</p></a>
+                <a href="recent9.html" class="media-card"><div class="card-thumb"><img src="movpic/Ponyo.jpg" alt="Ponyo"></div><p class="card-title">Ponyo</p></a>
+                <a href="recent10.html" class="media-card"><div class="card-thumb"><img src="movpic/Slime.jpg" alt="Slime"></div><p class="card-title">That Time I Got Reincarnated as a Slime</p></a>
+            </div>
+            <button class="scroll-btn right-btn" onclick="manualScroll('recentScroller', 300)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2 class="section-title">Movies <a href="movies.html" class="view-all">View All</a></h2>
+        <div class="scroller-container">
+            <button class="scroll-btn left-btn" onclick="manualScroll('moviesScroller', -300)">&#10094;</button>
+            <div class="media-scroller scroller-3d scroll-left" id="moviesScroller">
+                <a href="movies1.html" class="media-card"><div class="card-thumb"><img src="movpic/Mary.jpg" alt="Mary"></div><p class="card-title">Mary and the Witch's Flower</p></a>
+                <a href="movies2.html" class="media-card"><div class="card-thumb"><img src="movpic/Mononoke.jpg" alt="Mononoke"></div><p class="card-title">Princess Mononoke</p></a>
+                <a href="movies3.html" class="media-card"><div class="card-thumb"><img src="movpic/MovingCastle.jpg" alt="MovingCastle"></div><p class="card-title">Howl's Moving Castle</p></a>
+                <a href="movies4.html" class="media-card"><div class="card-thumb"><img src="movpic/Ponyo.jpg" alt="Ponyo"></div><p class="card-title">Ponyo</p></a>
+                <a href="movies5.html" class="media-card"><div class="card-thumb"><img src="movpic/Slime.jpg" alt="Slime"></div><p class="card-title">That Time I Got Reincarnated as a Slime</p></a>
+                <a href="movies6.html" class="media-card"><div class="card-thumb"><img src="movpic/Totoro.jpg" alt="Totoro"></div><p class="card-title">My Neighbor Totoro</p></a>
+                <a href="movies7.html" class="media-card"><div class="card-thumb"><img src="movpic/Violet.jpg" alt="Violet"></div><p class="card-title">Violet Evergarden</p></a>
+                <a href="movies8.html" class="media-card"><div class="card-thumb"><img src="movpic/Yourname.jpg" alt="Your Name"></div><p class="card-title">Your Name</p></a>
+                <a href="movies9.html" class="media-card"><div class="card-thumb"><img src="movpic/ColorfulStage.jpg" alt="Colorful Stage"></div><p class="card-title">Colorful Stage</p></a>
+                <a href="movies10.html" class="media-card"><div class="card-thumb"><img src="movpic/KIKI.jpg" alt="Kiki"></div><p class="card-title">Kiki's Delivery Service</p></a>
+                <a href="movies1.html" class="media-card"><div class="card-thumb"><img src="movpic/Mary.jpg" alt="Mary"></div><p class="card-title">Mary and the Witch's Flower</p></a>
+                <a href="movies2.html" class="media-card"><div class="card-thumb"><img src="movpic/Mononoke.jpg" alt="Mononoke"></div><p class="card-title">Princess Mononoke</p></a>
+                <a href="movies3.html" class="media-card"><div class="card-thumb"><img src="movpic/MovingCastle.jpg" alt="MovingCastle"></div><p class="card-title">Howl's Moving Castle</p></a>
+                <a href="movies4.html" class="media-card"><div class="card-thumb"><img src="movpic/Ponyo.jpg" alt="Ponyo"></div><p class="card-title">Ponyo</p></a>
+                <a href="movies5.html" class="media-card"><div class="card-thumb"><img src="movpic/Slime.jpg" alt="Slime"></div><p class="card-title">That Time I Got Reincarnated as a Slime</p></a>
+                <a href="movies6.html" class="media-card"><div class="card-thumb"><img src="movpic/Totoro.jpg" alt="Totoro"></div><p class="card-title">My Neighbor Totoro</p></a>
+                <a href="movies7.html" class="media-card"><div class="card-thumb"><img src="movpic/Violet.jpg" alt="Violet"></div><p class="card-title">Violet Evergarden</p></a>
+                <a href="movies8.html" class="media-card"><div class="card-thumb"><img src="movpic/Yourname.jpg" alt="Your Name"></div><p class="card-title">Your Name</p></a>
+                <a href="movies9.html" class="media-card"><div class="card-thumb"><img src="movpic/ColorfulStage.jpg" alt="Colorful Stage"></div><p class="card-title">Colorful Stage</p></a>
+                <a href="movies10.html" class="media-card"><div class="card-thumb"><img src="movpic/KIKI.jpg" alt="Kiki"></div><p class="card-title">Kiki's Delivery Service</p></a>
+            </div>
+            <button class="scroll-btn right-btn" onclick="manualScroll('moviesScroller', 300)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2 class="section-title">Series <a href="series.html" class="view-all">View All</a></h2>
+        <div class="scroller-container">
+            <button class="scroll-btn left-btn" onclick="manualScroll('seriesScroller', -300)">&#10094;</button>
+            <div class="media-scroller scroller-3d scroll-left" id="seriesScroller">
+                <a href="series1.html" class="media-card"><div class="card-thumb"><img src="seriespic/series1.jpg" alt="Series 1"></div><p class="card-title">Series 1</p></a>
+                <a href="series2.html" class="media-card"><div class="card-thumb"><img src="seriespic/series2.jpg" alt="Series 2"></div><p class="card-title">Series 2</p></a>
+                <a href="series3.html" class="media-card"><div class="card-thumb"><img src="seriespic/series3.jpg" alt="Series 3"></div><p class="card-title">Series 3</p></a>
+                <a href="series4.html" class="media-card"><div class="card-thumb"><img src="seriespic/series4.jpg" alt="Series 4"></div><p class="card-title">Series 4</p></a>
+                <a href="series5.html" class="media-card"><div class="card-thumb"><img src="seriespic/series5.jpg" alt="Series 5"></div><p class="card-title">Series 5</p></a>
+                <a href="series6.html" class="media-card"><div class="card-thumb"><img src="seriespic/series1.jpg" alt="Series 6"></div><p class="card-title">Series 6</p></a>
+                <a href="series7.html" class="media-card"><div class="card-thumb"><img src="seriespic/series2.jpg" alt="Series 7"></div><p class="card-title">Series 7</p></a>
+                <a href="series8.html" class="media-card"><div class="card-thumb"><img src="seriespic/series3.jpg" alt="Series 8"></div><p class="card-title">Series 8</p></a>
+                <a href="series9.html" class="media-card"><div class="card-thumb"><img src="seriespic/series4.jpg" alt="Series 9"></div><p class="card-title">Series 9</p></a>
+                <a href="series10.html" class="media-card"><div class="card-thumb"><img src="seriespic/series5.jpg" alt="Series 10"></div><p class="card-title">Series 10</p></a>
+                <a href="series1.html" class="media-card"><div class="card-thumb"><img src="seriespic/series1.jpg" alt="Series 1"></div><p class="card-title">Series 1</p></a>
+                <a href="series2.html" class="media-card"><div class="card-thumb"><img src="seriespic/series2.jpg" alt="Series 2"></div><p class="card-title">Series 2</p></a>
+                <a href="series3.html" class="media-card"><div class="card-thumb"><img src="seriespic/series3.jpg" alt="Series 3"></div><p class="card-title">Series 3</p></a>
+                <a href="series4.html" class="media-card"><div class="card-thumb"><img src="seriespic/series4.jpg" alt="Series 4"></div><p class="card-title">Series 4</p></a>
+                <a href="series5.html" class="media-card"><div class="card-thumb"><img src="seriespic/series5.jpg" alt="Series 5"></div><p class="card-title">Series 5</p></a>
+                <a href="series6.html" class="media-card"><div class="card-thumb"><img src="seriespic/series1.jpg" alt="Series 6"></div><p class="card-title">Series 6</p></a>
+                <a href="series7.html" class="media-card"><div class="card-thumb"><img src="seriespic/series2.jpg" alt="Series 7"></div><p class="card-title">Series 7</p></a>
+                <a href="series8.html" class="media-card"><div class="card-thumb"><img src="seriespic/series3.jpg" alt="Series 8"></div><p class="card-title">Series 8</p></a>
+                <a href="series9.html" class="media-card"><div class="card-thumb"><img src="seriespic/series4.jpg" alt="Series 9"></div><p class="card-title">Series 9</p></a>
+                <a href="series10.html" class="media-card"><div class="card-thumb"><img src="seriespic/series5.jpg" alt="Series 10"></div><p class="card-title">Series 10</p></a>
+            </div>
+            <button class="scroll-btn right-btn" onclick="manualScroll('seriesScroller', 300)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2 class="section-title">Authors <a href="authors.html" class="view-all">View All</a></h2>
+        <div class="scroller-container">
+            <button class="scroll-btn left-btn" onclick="manualScroll('authorScroller', -300)">&#10094;</button>
+            <div class="media-scroller scroller-3d author-scroller scroll-left" id="authorScroller">
+                <div class="author-card">
+                    <div class="author-avatar"><img src="authors/Miyazaki4.jpg" alt="Miyazaki"></div>
+                    <h3>Miyazaki</h3>
+                    <p>Hayao Miyazaki is a Japanese animator, filmmaker, and manga artist...</p>
+                    <div class="author-footer"><span>3 Files</span> <a href="authors/miyazaki.html">All Creations &rarr;</a></div>
+                </div>
+                <div class="author-card">
+                    <div class="author-avatar"><img src="authors/Oda1.jpg" alt="Oda"></div>
+                    <h3>Oda</h3>
+                    <p>Eiichiro Oda is a Japanese manga artist, best known for One Piece...</p>
+                    <div class="author-footer"><span>3 Files</span> <a href="authors/oda.html">All Creations &rarr;</a></div>
+                </div>
+                <div class="author-card">
+                    <div class="author-avatar"><img src="authors/Toriyama6.jpg" alt="Toriyama"></div>
+                    <h3>Toriyama</h3>
+                    <p>Akira Toriyama was a Japanese manga artist, famous for Dragon Ball...</p>
+                    <div class="author-footer"><span>3 Files</span> <a href="authors/toriyama.html">All Creations &rarr;</a></div>
+                </div>
+                <div class="author-card">
+                    <div class="author-avatar"><img src="authors/Miyazaki4.jpg" alt="Miyazaki"></div>
+                    <h3>Miyazaki</h3>
+                    <p>Hayao Miyazaki is a Japanese animator, filmmaker, and manga artist...</p>
+                    <div class="author-footer"><span>3 Files</span> <a href="authors/miyazaki.html">All Creations &rarr;</a></div>
+                </div>
+                <div class="author-card">
+                    <div class="author-avatar"><img src="authors/Oda1.jpg" alt="Oda"></div>
+                    <h3>Oda</h3>
+                    <p>Eiichiro Oda is a Japanese manga artist, best known for One Piece...</p>
+                    <div class="author-footer"><span>3 Files</span> <a href="authors/oda.html">All Creations &rarr;</a></div>
+                </div>
+                <div class="author-card">
+                    <div class="author-avatar"><img src="authors/Toriyama6.jpg" alt="Toriyama"></div>
+                    <h3>Toriyama</h3>
+                    <p>Akira Toriyama was a Japanese manga artist, famous for Dragon Ball...</p>
+                    <div class="author-footer"><span>3 Files</span> <a href="authors/toriyama.html">All Creations &rarr;</a></div>
+                </div>
+            </div>
+            <button class="scroll-btn right-btn" onclick="manualScroll('authorScroller', 300)">&#10095;</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-col">
+            <h3>JAPANESE CREATIONS</h3>
+            <p>Explore the best anime film presentations...</p>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="series.html">Series</a>
+            <a href="authors.html">Authors</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('watchNowBtn').addEventListener('click', function() {
+            const heroVid = document.querySelector('.hero-video-bg');
+            heroVid.muted = false; 
+            heroVid.play();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        function manualScroll(scrollerId, amount) {
+            const scroller = document.getElementById(scrollerId);
+            scroller.scrollBy({ left: amount, behavior: 'smooth' });
+        }
+
+        let currentActiveIndex = 0;
+        const cards = document.querySelectorAll('.t-card');
+        const dots = document.querySelectorAll('.t-dot');
+
+        function updateCarousel() {
+            cards.forEach((card, index) => {
+                card.className = 't-card';
+                let diff = index - currentActiveIndex;
+                const totalCards = cards.length;
+                if (diff > totalCards / 2) diff -= totalCards;
+                if (diff < -totalCards / 2) diff += totalCards;
+
+                if (diff === 0) {
+                    card.classList.add('active');
+                } else if (diff === -1) {
+                    card.classList.add('prev-1');
+                } else if (diff === -2) {
+                    card.classList.add('prev-2');
+                } else if (diff === 1) {
+                    card.classList.add('next-1');
+                } else if (diff === 2) {
+                    card.classList.add('next-2');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                if (index === currentActiveIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function moveCarousel(direction) {
+            currentActiveIndex += direction;
+            if (currentActiveIndex < 0) {
+                currentActiveIndex = cards.length - 1;
+            } else if (currentActiveIndex >= cards.length) {
+                currentActiveIndex = 0;
+            }
+            updateCarousel();
+        }
+
+        function currentSlide(index) {
+            currentActiveIndex = index;
+            updateCarousel();
+        }
+
+        updateCarousel();
+    </script>
+</body>
+</html>
